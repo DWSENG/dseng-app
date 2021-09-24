@@ -10,7 +10,7 @@ export default function App({ message }) {
 }
 
 export async function getServerSideProps({ params, req, res }) {
-  const { data } = await axios.get('http://localhost:3000/api/hi')
+  const { data } = await axios.get(`${process.env.api}/hi`)
   const { message } = data
   return {
     props: { message },
