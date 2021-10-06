@@ -10,9 +10,9 @@ export default function Landing() {
       </h1>
       <button
         className="py-2 px-4 rounded-lg bg-gray-50 text-gray-800 hover:text-red-800 hover:shadow-white transition"
-        onClick={() => signIn('github')}
+        onClick={() => signIn('azure-ad')}
       >
-        signin with github
+        signin
       </button>
     </div>
   )
